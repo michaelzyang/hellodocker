@@ -38,6 +38,8 @@ CMD [ "node", "server.js" ]
 # $ docker kill <container id>; Sends SIGKILL
 # $ docker rm <container id>; Remove container data e.g. processes, file system, volume & network mappings, etc.
 # $ docker rm $(docker ps -aq); Remove all containers
+# $ docker image rm [OPTIONS] IMAGE [IMAGE...]; Remove image
+# $ docker image rm $(docker images -q); Remove all images
 # Proper versioning https://betterprogramming.pub/how-to-version-your-code-in-2020-60bdd221278b
 # $ docker build -t <username>/<image name>:latest .;
 # $ docker tag <username>/<image name>:latest <username>/<image name>:<version>; https://docs.docker.com/engine/reference/commandline/tag/
