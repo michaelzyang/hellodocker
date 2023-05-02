@@ -1,3 +1,6 @@
+Install gcloud CLI
+https://cloud.google.com/sdk/docs/install
+
 Build and a Docker image with Cloud Build and Push to an Artifact Registry repo from a local directory with Dockerfile
 https://cloud.google.com/build/docs/build-push-docker-image
 
