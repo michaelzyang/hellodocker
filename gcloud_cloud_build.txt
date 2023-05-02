@@ -1,9 +1,14 @@
-Build and a Docker image with Cloud Build and Push to an Artifact Registry repo from a local directory
+Build and a Docker image with Cloud Build and Push to an Artifact Registry repo from a local directory with Dockerfile
 https://cloud.google.com/build/docs/build-push-docker-image
 
 Then deploy a web service from an image in the Artifact Registry
 https://cloud.google.com/run/docs/quickstarts?_ga=2.3436592.-1854877041.1681099032#deploy-a-prebuilt-container
 
-Do them both in one step! (note: some permissions may need to be enabled first)
+Do them both in one step with Dockerfile or buildpack! (note: some permissions may need to be enabled first)
 https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-nodejs-service
-$ gcloud run deploy 
+$ gcloud run deploy
+https://cloud.google.com/sdk/gcloud/reference/run/deploy
+If a Dockerfile is present in the source code directory, it will be built using that Dockerfile, otherwise it will use Google Cloud buildpacks.
+
+Continuous deployment from source code in Git
+https://cloud.google.com/run/docs/continuous-deployment-with-cloud-build#setup-cd
